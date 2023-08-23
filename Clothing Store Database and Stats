@@ -1,0 +1,28 @@
+--create a clothing store datebase with total price of the items with 5 columns
+
+CREATE TABLE clothes (id integer primary key,category text , price integer, color text, area text);
+
+insert into
+clothes
+values
+(1, "shirt", 10, "white", "top"),
+(2, "shirt", 10, "black", "top"),
+(3, "shirt", 10, "blue", "top"),
+(4, " miniskirt", 15, "black", "bottom"),
+(5, "skirt", 20, "black", "bottom"),
+(6, "skirt", 20, "white", "bottom"),
+(7, "maxiskirt", 25, "white", "bottom"),
+(8, "halter", 15, "white", "top"),
+(9, "jeans", 30, "blue", "bottom"),
+(10, "shorts", 25, "blue", "bottom"),
+(11, "dress", 25, "black", "top"),
+(12, "capri", 25, "blue", "bottom"),
+(13, "tank", 10, "black", "top"),
+(14, "sweater", 35, "white", "top"),
+(15, "sweater", 35, "black", "top")
+;
+Select * from clothes
+where price >=10
+order by price asc;
+Select sum(price)
+from clothes;
